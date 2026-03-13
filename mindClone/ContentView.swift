@@ -1,24 +1,19 @@
-//
-//  ContentView.swift
-//  mindClone
-//
-//  Created by 김무경 on 3/13/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    @Environment(NoteStore.self) private var noteStore
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if hasCompletedOnboarding {
+            HomeView(noteStore: noteStore)
+        } else {
+            OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(NoteStore())
 }
