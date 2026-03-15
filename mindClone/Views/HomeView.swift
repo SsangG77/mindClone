@@ -1,10 +1,19 @@
 import SwiftUI
 
+// MARK: - 오늘의 추천 카드 위치 전달용 PreferenceKey
+struct TodayCardFrameKey: PreferenceKey {
+    static var defaultValue: CGRect = .zero
+    static func reduce(value: inout CGRect, nextValue: () -> CGRect) {
+        value = nextValue()
+    }
+}
+
 struct HomeView: View {
     @State var noteStore: NoteStore
     @State private var selectedCategory: TemplateCategory?
     @State private var selectedTemplate: Template?
     @State private var showLibrary = false
+    @State private var showTemplateRequest = false
 
     private var filteredTemplates: [Template] {
         if let category = selectedCategory {
@@ -28,6 +37,7 @@ struct HomeView: View {
                         todaySection
                         categoryFilter
                         templateGrid
+                        templateRequestSection
                     }
                     .padding()
                 }
@@ -52,6 +62,9 @@ struct HomeView: View {
                 NavigationStack {
                     NotesLibraryView(noteStore: noteStore)
                 }
+            }
+            .sheet(isPresented: $showTemplateRequest) {
+                TemplateRequestView()
             }
         }
     }
@@ -102,6 +115,15 @@ struct HomeView: View {
                 .sketchyCard(wobble: 2.5)
             }
             .buttonStyle(.plain)
+            .background(
+                GeometryReader { geo in
+                    Color.clear
+                        .preference(
+                            key: TodayCardFrameKey.self,
+                            value: geo.frame(in: .global)
+                        )
+                }
+            )
         }
     }
 
@@ -119,6 +141,41 @@ struct HomeView: View {
                 }
             }
         }
+    }
+
+    private var templateRequestSection: some View {
+        Button {
+            showTemplateRequest = true
+        } label: {
+            HStack(spacing: 12) {
+                ZStack {
+                    SketchyRoundedRect(cornerRadius: 10, wobble: 1.5)
+                        .fill(MCColor.eraserFallback.opacity(0.2))
+                        .frame(width: 48, height: 48)
+
+                    Image(systemName: "plus.bubble.fill")
+                        .font(.system(size: 22))
+                        .foregroundStyle(MCColor.eraserFallback)
+                }
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("원하는 템플릿이 없나요?")
+                        .font(MCFont.headline)
+                        .foregroundStyle(MCColor.inkFallback)
+                    Text("직접 요청해보세요!")
+                        .font(MCFont.caption)
+                        .foregroundStyle(MCColor.pencilFallback)
+                }
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .foregroundStyle(MCColor.pencilFallback)
+            }
+            .padding()
+            .sketchyCard(wobble: 2)
+        }
+        .buttonStyle(.plain)
     }
 
     private var templateGrid: some View {

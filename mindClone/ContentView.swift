@@ -5,11 +5,12 @@ struct ContentView: View {
     @Environment(NoteStore.self) private var noteStore
 
     var body: some View {
-        if hasCompletedOnboarding {
-            HomeView(noteStore: noteStore)
-        } else {
-            OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
-        }
+        HomeView(noteStore: noteStore)
+            .overlay {
+                if !hasCompletedOnboarding {
+                    CoachMarkOverlayView(hasCompleted: $hasCompletedOnboarding)
+                }
+            }
     }
 }
 

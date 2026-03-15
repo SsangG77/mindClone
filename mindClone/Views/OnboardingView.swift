@@ -1,80 +1,137 @@
 import SwiftUI
 
-struct OnboardingView: View {
-    @Binding var hasCompletedOnboarding: Bool
-    @State private var currentPage = 0
-
-    private let pages: [(title: String, subtitle: String, icon: String)] = [
-        ("위대한 사람들은\n어떻게 생각했을까?", "역사상 가장 뛰어난 인물들의\n사고방식을 당신의 것으로 만드세요.", "brain.head.profile"),
-        ("그들의 메모 방식을\n그대로 따라하세요", "Cornell, Feynman, Elon Musk…\n검증된 프레임워크로 생각을 구조화합니다.", "doc.text.fill"),
-        ("Apple Pencil로\n직접 써보세요", "필기와 타이핑을 자유롭게 섞어\n당신만의 노트를 완성하세요.", "pencil.and.scribble"),
-        ("지금 시작하세요", "무료 템플릿 3개로\n당신의 뇌를 업그레이드하세요.", "rocket.fill"),
-    ]
+struct CoachMarkOverlayView: View {
+    @Binding var hasCompleted: Bool
+    @State private var cardFrame: CGRect = .zero
+    @State private var appeared = false
 
     var body: some View {
-        ZStack {
-            PaperPatternBackground()
+        GeometryReader { proxy in
+            ZStack {
+                // 반투명 검정 배경 + cutout
+                coachMarkBackground(in: proxy)
 
-            VStack(spacing: 0) {
-                TabView(selection: $currentPage) {
-                    ForEach(0..<pages.count, id: \.self) { index in
-                        VStack(spacing: 32) {
-                            Spacer()
+                // 안내 말풍선 + 건너뛰기
+                VStack {
+                    Spacer()
+                        .frame(height: cardFrame.maxY + 16)
 
-                            ZStack {
-                                Circle()
-                                    .fill(MCColor.highlightFallback.opacity(0.3))
-                                    .frame(width: 140, height: 140)
+                    speechBubble
+                        .padding(.horizontal, 24)
 
-                                Image(systemName: pages[index].icon)
-                                    .font(.system(size: 64))
-                                    .foregroundStyle(MCColor.inkFallback)
-                            }
+                    Spacer()
 
-                            VStack(spacing: 16) {
-                                Text(pages[index].title)
-                                    .font(MCFont.title)
-                                    .foregroundStyle(MCColor.inkFallback)
-                                    .multilineTextAlignment(.center)
-
-                                Text(pages[index].subtitle)
-                                    .font(MCFont.body)
-                                    .foregroundStyle(MCColor.pencilFallback)
-                                    .multilineTextAlignment(.center)
-                            }
-
-                            Spacer()
-                            Spacer()
-                        }
-                        .padding(.horizontal, 40)
-                        .tag(index)
-                    }
-                }
-                .tabViewStyle(.page(indexDisplayMode: .always))
-
-                Button {
-                    if currentPage < pages.count - 1 {
-                        withAnimation { currentPage += 1 }
-                    } else {
-                        hasCompletedOnboarding = true
-                    }
-                } label: {
-                    Text(currentPage < pages.count - 1 ? "다음" : "시작하기")
-                        .sketchyButton()
-                }
-                .buttonStyle(.plain)
-                .padding(.horizontal, UIDevice.current.userInterfaceIdiom == .pad ? 40 : 24)
-                .padding(.bottom, 40)
-
-                if currentPage < pages.count - 1 {
-                    Button("건너뛰기") {
-                        hasCompletedOnboarding = true
-                    }
-                    .font(MCFont.caption)
-                    .foregroundStyle(MCColor.pencilFallback)
-                    .padding(.bottom, 20)
+                    skipButton
+                        .padding(.bottom, 48)
                 }
             }
+            .ignoresSafeArea()
+            .opacity(appeared ? 1 : 0)
+            .onPreferenceChange(TodayCardFrameKey.self) { frame in
+                cardFrame = frame
+            }
         }
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.4)) {
+                appeared = true
+            }
+        }
+    }
+
+    // MARK: - 배경 (cutout 처리)
+    @ViewBuilder
+    private func coachMarkBackground(in proxy: GeometryProxy) -> some View {
+        let screenRect = CGRect(origin: .zero, size: proxy.size)
+        let padding: CGFloat = 8
+        let cutout = cardFrame.insetBy(dx: -padding, dy: -padding)
+
+        Canvas { context, size in
+            // 전체 어두운 배경
+            context.fill(
+                Path(screenRect),
+                with: .color(.black.opacity(0.55))
+            )
+            // cutout 영역을 지움 (블렌드모드 사용)
+            context.blendMode = .destinationOut
+            context.fill(
+                Path(roundedRect: cutout, cornerRadius: 16),
+                with: .color(.white)
+            )
+        }
+        .compositingGroup()
+        .allowsHitTesting(false)
+
+        // cutout 영역 테두리 (하이라이트)
+        if cardFrame != .zero {
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(MCColor.highlightFallback, lineWidth: 2.5)
+                .frame(width: cutout.width, height: cutout.height)
+                .position(x: cutout.midX, y: cutout.midY)
+                .allowsHitTesting(false)
+        }
+    }
+
+    // MARK: - 말풍선
+    private var speechBubble: some View {
+        VStack(spacing: 8) {
+            // 꼬리 삼각형
+            Triangle()
+                .fill(MCColor.paperFallback)
+                .frame(width: 20, height: 10)
+                .rotationEffect(.degrees(180))
+                .offset(x: -40)
+
+            HStack(spacing: 10) {
+                Image(systemName: "hand.point.up.left.fill")
+                    .font(.system(size: 22))
+                    .foregroundStyle(MCColor.highlightFallback)
+
+                Text("여기를 눌러 첫 노트를\n만들어보세요!")
+                    .font(MCFont.headline)
+                    .foregroundStyle(MCColor.inkFallback)
+                    .multilineTextAlignment(.leading)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
+            .background(
+                SketchyRoundedRect(cornerRadius: 14, wobble: 2.5)
+                    .fill(MCColor.paperFallback)
+            )
+            .overlay(
+                SketchyRoundedRect(cornerRadius: 14, wobble: 2.5)
+                    .stroke(MCColor.inkFallback.opacity(0.3), lineWidth: 1.5)
+            )
+        }
+    }
+
+    // MARK: - 건너뛰기 버튼
+    private var skipButton: some View {
+        Button {
+            withAnimation(.easeIn(duration: 0.25)) {
+                hasCompleted = true
+            }
+        } label: {
+            Text("건너뛰기")
+                .font(MCFont.subheadline)
+                .foregroundStyle(MCColor.paperFallback.opacity(0.85))
+                .padding(.horizontal, 24)
+                .padding(.vertical, 10)
+                .background(
+                    Capsule()
+                        .stroke(MCColor.paperFallback.opacity(0.5), lineWidth: 1)
+                )
+        }
+    }
+}
+
+// MARK: - 삼각형 Shape (말풍선 꼬리)
+private struct Triangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.closeSubpath()
+        return path
     }
 }
