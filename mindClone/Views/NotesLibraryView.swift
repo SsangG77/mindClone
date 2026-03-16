@@ -2,7 +2,6 @@ import SwiftUI
 
 struct NotesLibraryView: View {
     var noteStore: NoteStore
-    @Environment(\.dismiss) private var dismiss
     @State private var searchText = ""
     @State private var filterTemplateId: String?
     @State private var selectedNote: Note?
@@ -65,12 +64,6 @@ struct NotesLibraryView: View {
         .navigationTitle("노트 보관함")
         .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $searchText, prompt: "노트 검색")
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button("닫기") { dismiss() }
-                    .font(MCFont.subheadline)
-            }
-        }
         .fullScreenCover(item: $selectedNote) { note in
             if let template = Template.template(for: note.templateId) {
                 NoteEditorView(template: template, noteStore: noteStore, existingNote: note)
@@ -98,26 +91,25 @@ struct NotesLibraryView: View {
     }
 
     private var notesList: some View {
-        ScrollView {
-            LazyVStack(spacing: 12) {
-                ForEach(filteredNotes) { note in
-                    Button {
-                        selectedNote = note
+        List {
+            ForEach(filteredNotes) { note in
+                Button {
+                    selectedNote = note
+                } label: {
+                    HandDrawnNoteRow(note: note)
+                }
+                .listRowBackground(Color.clear)
+                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                    Button(role: .destructive) {
+                        noteStore.delete(note)
                     } label: {
-                        HandDrawnNoteRow(note: note)
-                    }
-                    .buttonStyle(.plain)
-                    .contextMenu {
-                        Button(role: .destructive) {
-                            noteStore.delete(note)
-                        } label: {
-                            Label("삭제", systemImage: "trash")
-                        }
+                        Label("삭제", systemImage: "trash")
                     }
                 }
             }
-            .padding()
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
     }
 }
 

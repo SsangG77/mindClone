@@ -144,6 +144,7 @@ struct SketchyButton: ViewModifier {
             .font(MCFont.headline)
             .foregroundStyle(MCColor.paperFallback)
             .padding(.vertical, 16)
+            .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
             .background(MCColor.inkFallback)
             .clipShape(SketchyRoundedRect(cornerRadius: 14, wobble: 3))

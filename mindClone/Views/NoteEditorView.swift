@@ -108,7 +108,7 @@ struct NoteEditorView: View {
         case .pencil:
             pencilCanvas
         case .typing:
-            typingView
+            TemplateTypingLayout(template: template, textContents: $textContents)
         }
     }
 
@@ -118,77 +118,9 @@ struct NoteEditorView: View {
                 PencilCanvasView(canvasView: $canvasView, drawing: note.drawingData)
                     .ignoresSafeArea(edges: .bottom)
 
-                VStack(spacing: 0) {
-                    ForEach(template.sections) { section in
-                        VStack(alignment: .leading) {
-                            Text(section.title)
-                                .font(MCFont.caption)
-                                .fontWeight(.bold)
-                                .foregroundStyle(MCColor.pencilFallback.opacity(0.5))
-                                .padding(.horizontal, 8)
-                                .padding(.top, 4)
-                            Spacer()
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .frame(height: geo.size.height * section.heightRatio)
-                        .overlay(alignment: .bottom) {
-                            SketchyUnderline()
-                                .stroke(MCColor.pencilFallback.opacity(0.2), lineWidth: 1)
-                                .frame(height: 4)
-                                .padding(.horizontal, 8)
-                        }
-                    }
-                }
-                .allowsHitTesting(false)
+                TemplateGuideOverlay(template: template, size: geo.size)
             }
         }
-    }
-
-    private var typingView: some View {
-        GeometryReader { geo in
-            ScrollView {
-                VStack(spacing: 20) {
-                    ForEach(template.sections) { section in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(section.title)
-                                .font(MCFont.headline)
-                                .foregroundStyle(MCColor.inkFallback)
-
-                            ZStack(alignment: .topLeading) {
-                                TextEditor(text: binding(for: section.id.uuidString))
-                                    .font(MCFont.body)
-                                    .scrollContentBackground(.hidden)
-                                    .frame(minHeight: max(100, geo.size.height * section.heightRatio))
-                                    .padding(12)
-                                    .background(MCColor.paperDarkFallback.opacity(0.5))
-                                    .clipShape(SketchyRoundedRect(cornerRadius: 10, wobble: 1.5))
-                                    .overlay(
-                                        SketchyRoundedRect(cornerRadius: 10, wobble: 1.5)
-                                            .stroke(MCColor.inkFallback.opacity(0.15), lineWidth: 1)
-                                    )
-
-                                if textContents[section.id.uuidString, default: ""].isEmpty {
-                                    Text(section.placeholder)
-                                        .font(MCFont.body)
-                                        .foregroundStyle(MCColor.pencilFallback.opacity(0.4))
-                                        .padding(.horizontal, 16)
-                                        .padding(.vertical, 20)
-                                        .allowsHitTesting(false)
-                                }
-                            }
-                        }
-                    }
-                }
-                .padding()
-            }
-        }
-    }
-
-    private func binding(for key: String) -> Binding<String> {
-        Binding(
-            get: { textContents[key, default: ""] },
-            set: { textContents[key] = $0 }
-        )
     }
 
     private func saveNote() {
@@ -213,10 +145,17 @@ struct PencilCanvasView: UIViewRepresentable {
         canvasView.backgroundColor = UIColor(MCColor.paperFallback)
         canvasView.isOpaque = false
 
+        // 검정색 펜으로 기본 설정
+        let blackInk = PKInkingTool(.pen, color: .black, width: 3)
+        canvasView.tool = blackInk
+
         let toolPicker = PKToolPicker()
         toolPicker.setVisible(true, forFirstResponder: canvasView)
         toolPicker.addObserver(canvasView)
         canvasView.becomeFirstResponder()
+
+        // PKToolPicker에 기본 도구 오버라이드 (검정 펜 + 지우개 포함)
+        context.coordinator.toolPicker = toolPicker
 
         if let data = drawing, let loadedDrawing = try? PKDrawing(data: data) {
             canvasView.drawing = loadedDrawing
@@ -226,4 +165,12 @@ struct PencilCanvasView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: PKCanvasView, context: Context) {}
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+
+    class Coordinator {
+        var toolPicker: PKToolPicker?
+    }
 }

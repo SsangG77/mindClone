@@ -1,0 +1,184 @@
+{
+  "identifier" : "com.sangjin.mindClone.products",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_gtd",
+      "localizations" : [
+        {
+          "description" : "GTD 생산성 템플릿",
+          "displayName" : "GTD 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.gtd",
+      "referenceName" : "GTD Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_eisenhower",
+      "localizations" : [
+        {
+          "description" : "아이젠하워 매트릭스 템플릿",
+          "displayName" : "Eisenhower Matrix 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.eisenhower",
+      "referenceName" : "Eisenhower Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_davinci",
+      "localizations" : [
+        {
+          "description" : "다빈치 스케치노트 템플릿",
+          "displayName" : "Da Vinci Sketchnote 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.davinci",
+      "referenceName" : "Da Vinci Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_franklin",
+      "localizations" : [
+        {
+          "description" : "벤저민 프랭클린 덕목 일지",
+          "displayName" : "Franklin 덕목 일지 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.franklin",
+      "referenceName" : "Franklin Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_buffett",
+      "localizations" : [
+        {
+          "description" : "워렌 버핏 2-List 목표 설정법",
+          "displayName" : "Buffett 2-List 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.buffett",
+      "referenceName" : "Buffett Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_thinkweek",
+      "localizations" : [
+        {
+          "description" : "빌 게이츠 Think Week 루틴",
+          "displayName" : "Think Week 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.thinkweek",
+      "referenceName" : "Think Week Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_zettelkasten",
+      "localizations" : [
+        {
+          "description" : "제텔카스텐 메모 카드",
+          "displayName" : "Zettelkasten 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.zettelkasten",
+      "referenceName" : "Zettelkasten Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_threecircle",
+      "localizations" : [
+        {
+          "description" : "스티브 잡스 3-Circle Framework",
+          "displayName" : "3-Circle Framework 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.threecircle",
+      "referenceName" : "3-Circle Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_bulletjournal",
+      "localizations" : [
+        {
+          "description" : "불렛저널 래피드 로깅",
+          "displayName" : "Bullet Journal 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.bulletjournal",
+      "referenceName" : "Bullet Journal Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "template_para",
+      "localizations" : [
+        {
+          "description" : "PARA Method 정보 정리",
+          "displayName" : "PARA Method 템플릿",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.template.para",
+      "referenceName" : "PARA Template",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "alltemplates",
+      "localizations" : [
+        {
+          "description" : "모든 유료 템플릿 영구 언락",
+          "displayName" : "올인원 팩 (전체 템플릿)",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "com.sangjin.mindClone.alltemplates",
+      "referenceName" : "All Templates Pack",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "mindClone",
+    "_developerTeamID" : "M3KH86595Z"
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

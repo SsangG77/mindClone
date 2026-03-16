@@ -12,7 +12,6 @@ struct HomeView: View {
     @State var noteStore: NoteStore
     @State private var selectedCategory: TemplateCategory?
     @State private var selectedTemplate: Template?
-    @State private var showLibrary = false
     @State private var showTemplateRequest = false
 
     private var filteredTemplates: [Template] {
@@ -43,25 +42,11 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("MindClone")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        showLibrary = true
-                    } label: {
-                        Image(systemName: "tray.full.fill")
-                            .foregroundStyle(MCColor.inkFallback)
-                    }
-                }
-            }
             .sheet(item: $selectedTemplate) { template in
                 NavigationStack {
                     TemplateDetailView(template: template, noteStore: noteStore)
                 }
-            }
-            .sheet(isPresented: $showLibrary) {
-                NavigationStack {
-                    NotesLibraryView(noteStore: noteStore)
-                }
+                .presentationDetents([.large])
             }
             .sheet(isPresented: $showTemplateRequest) {
                 TemplateRequestView()

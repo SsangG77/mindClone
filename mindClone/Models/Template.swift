@@ -57,20 +57,19 @@ extension Template {
             systemImageName: "text.book.closed.fill"
         ),
         Template(
-            id: "first_principles",
-            name: "First Principles",
+            id: "musk_timeblock",
+            name: "Musk Time Block",
             person: "Elon Musk",
-            personDescription: "Tesla·SpaceX 혁신의 사고법",
-            category: .thinking,
+            personDescription: "Tesla·SpaceX CEO의 5분 단위 시간 관리법",
+            category: .productivity,
             isFree: true,
-            benefit: "기존의 가정을 모두 제거하고, 가장 근본적인 사실만 남긴 뒤 처음부터 다시 생각합니다. 남들이 '원래 그런 거야'라고 말할 때, 진짜 혁신이 시작됩니다.",
+            benefit: "하루를 30분 단위로 나누고, 가장 중요한 3가지를 먼저 정합니다. 나머지 생각은 Brain Dump에 쏟아낸 뒤 시간표에 배치합니다. 일론 머스크가 실제로 사용하는 플래너 방식입니다.",
             sections: [
-                TemplateSection(title: "문제 정의", placeholder: "해결하고 싶은 문제를 명확히 적으세요", heightRatio: 0.15),
-                TemplateSection(title: "기존 가정 나열", placeholder: "사람들이 당연하다고 여기는 것들을 모두 적으세요", heightRatio: 0.25),
-                TemplateSection(title: "근본 사실 추출", placeholder: "가정을 제거하고 남는 물리적/논리적 사실만 적으세요", heightRatio: 0.25),
-                TemplateSection(title: "새로운 해결책", placeholder: "근본 사실에서 출발한 새로운 접근법을 적으세요", heightRatio: 0.25),
+                TemplateSection(title: "Top Priorities", placeholder: "오늘 반드시 해야 할 일", heightRatio: 0.15),
+                TemplateSection(title: "Brain Dump", placeholder: "머릿속 모든 생각을 쏟아내세요", heightRatio: 0.4),
+                TemplateSection(title: "Time Block", placeholder: "", heightRatio: 0.45),
             ],
-            systemImageName: "atom"
+            systemImageName: "clock.fill"
         ),
         Template(
             id: "feynman",
@@ -134,21 +133,6 @@ extension Template {
                 TemplateSection(title: "연결 & 발견", placeholder: "관찰들 사이의 패턴이나 새로운 발견을 기록하세요", heightRatio: 0.2),
             ],
             systemImageName: "paintbrush.pointed.fill"
-        ),
-        Template(
-            id: "mindmap",
-            name: "Mind Map",
-            person: "Tony Buzan",
-            personDescription: "Bill Gates 추천 사고법",
-            category: .creativity,
-            isFree: false,
-            benefit: "중심 주제에서 가지를 뻗어나가며 생각을 확장합니다. 선형적 사고를 깨고, 아이디어 간의 연결을 시각적으로 발견할 수 있습니다.",
-            sections: [
-                TemplateSection(title: "중심 주제", placeholder: "가운데에 핵심 주제를 적으세요", heightRatio: 0.15),
-                TemplateSection(title: "주요 가지", placeholder: "중심에서 뻗어나가는 큰 카테고리들", heightRatio: 0.35),
-                TemplateSection(title: "세부 가지", placeholder: "각 가지에서 세부 아이디어를 확장하세요", heightRatio: 0.35),
-            ],
-            systemImageName: "point.3.connected.trianglepath.dotted"
         ),
         Template(
             id: "franklin",
