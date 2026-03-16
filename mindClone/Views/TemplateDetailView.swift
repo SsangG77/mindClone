@@ -74,7 +74,7 @@ struct TemplateDetailView: View {
                     .foregroundStyle(MCColor.pencilFallback)
 
                 HStack(spacing: 6) {
-                    Label(template.category.rawValue, systemImage: template.category.icon)
+                    Label(template.category.localizedName, systemImage: template.category.icon)
                         .font(MCFont.caption)
                         .padding(.horizontal, 10)
                         .padding(.vertical, 4)

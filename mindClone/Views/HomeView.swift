@@ -120,7 +120,7 @@ struct HomeView: View {
                 }
 
                 ForEach(TemplateCategory.allCases) { category in
-                    HandDrawnChip(title: category.rawValue, icon: category.icon, isSelected: selectedCategory == category) {
+                    HandDrawnChip(title: category.localizedName, icon: category.icon, isSelected: selectedCategory == category) {
                         selectedCategory = category
                     }
                 }

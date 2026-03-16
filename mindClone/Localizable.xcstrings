@@ -1,0 +1,1198 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "템플릿" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Templates" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "テンプレート" }
+        }
+      }
+    },
+    "노트" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Notes" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノート" }
+        }
+      }
+    },
+    "오늘의 추천" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Today's Pick" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "今日のおすすめ" }
+        }
+      }
+    },
+    "전체" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "All" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "すべて" }
+        }
+      }
+    },
+    "원하는 템플릿이 없나요?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Can't find the template you want?" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "欲しいテンプレートがありませんか？" }
+        }
+      }
+    },
+    "직접 요청해보세요!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Request it yourself!" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "リクエストしてみましょう！" }
+        }
+      }
+    },
+    "닫기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Close" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "閉じる" }
+        }
+      }
+    },
+    "타이핑" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Typing" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "タイピング" }
+        }
+      }
+    },
+    "저장 완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Saved" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "保存完了" }
+        }
+      }
+    },
+    "확인" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OK" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "確認" }
+        }
+      }
+    },
+    "노트가 보관함에 저장되었습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Your note has been saved." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノートが保存されました。" }
+        }
+      }
+    },
+    "노트가 없습니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "No notes yet" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノートがありません" }
+        }
+      }
+    },
+    "템플릿을 선택해서 첫 번째 노트를 작성해보세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Select a template to create your first note." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "テンプレートを選んで最初のノートを作りましょう。" }
+        }
+      }
+    },
+    "노트 보관함" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "My Notes" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノートライブラリ" }
+        }
+      }
+    },
+    "노트 검색" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Search notes" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノートを検索" }
+        }
+      }
+    },
+    "삭제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Delete" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "削除" }
+        }
+      }
+    },
+    "여기를 눌러 첫 노트를\n만들어보세요!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Tap here to create\nyour first note!" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ここをタップして\n最初のノートを作りましょう！" }
+        }
+      }
+    },
+    "건너뛰기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Skip" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "スキップ" }
+        }
+      }
+    },
+    "무료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Free" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "無料" }
+        }
+      }
+    },
+    "구매완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Purchased" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "購入済み" }
+        }
+      }
+    },
+    "이 방식을 쓰면?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Why this method?" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "この方法を使うと？" }
+        }
+      }
+    },
+    "템플릿 구조" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Template Structure" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "テンプレート構造" }
+        }
+      }
+    },
+    "이 방식으로 메모하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Start writing" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "このメソッドでメモする" }
+        }
+      }
+    },
+    "구매 후 메모하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Purchase to start" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "購入してメモする" }
+        }
+      }
+    },
+    "상품 불러오는 중..." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Loading products..." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "商品を読み込み中..." }
+        }
+      }
+    },
+    "이 템플릿만 구매" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Buy this template" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "このテンプレートだけ購入" }
+        }
+      }
+    },
+    "한번 구매로 영구 사용" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "One-time purchase, forever access" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "一度の購入で永久利用" }
+        }
+      }
+    },
+    "전체 템플릿 언락" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Unlock all templates" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "全テンプレート解除" }
+        }
+      }
+    },
+    "모든 템플릿 영구 사용" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Permanent access to all templates" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "すべてのテンプレートを永久利用" }
+        }
+      }
+    },
+    "구매 복원" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Restore purchases" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "購入を復元" }
+        }
+      }
+    },
+    "구매에 실패했습니다. 다시 시도해주세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Purchase failed. Please try again." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "購入に失敗しました。もう一度お試しください。" }
+        }
+      }
+    },
+    "템플릿 구매" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Purchase Template" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "テンプレート購入" }
+        }
+      }
+    },
+    "사고력" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Thinking" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "思考力" }
+        }
+      }
+    },
+    "생산성" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Productivity" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "生産性" }
+        }
+      }
+    },
+    "창의력" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Creativity" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "創造力" }
+        }
+      }
+    },
+    "자기계발" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Self-growth" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "自己啓発" }
+        }
+      }
+    },
+    "학습" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Learning" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "学習" }
+        }
+      }
+    },
+    "Cornell 대학" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Cornell University" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "コーネル大学" }
+        }
+      }
+    },
+    "하버드·MIT 표준 필기법" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Harvard & MIT standard note-taking method" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ハーバード・MIT標準ノート術" }
+        }
+      }
+    },
+    "노트를 '기록 → 핵심 키워드 → 요약'으로 구조화하여 복습 효율을 극대화합니다. 단순히 적는 것이 아니라, 적은 뒤 되짚는 습관을 만들어줍니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Structure your notes into 'Record → Keywords → Summary' to maximize review efficiency. It's not just about writing—it builds the habit of reviewing what you wrote." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノートを「記録→キーワード→要約」に構造化し、復習効率を最大化します。単に書くのではなく、書いた後に振り返る習慣を作ります。" }
+        }
+      }
+    },
+    "핵심 키워드나 질문을 적으세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Write key words or questions" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "キーワードや質問を書きましょう" }
+        }
+      }
+    },
+    "수업/회의 내용을 자유롭게 기록하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Freely record lecture or meeting notes" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "授業や会議の内容を自由に記録しましょう" }
+        }
+      }
+    },
+    "핵심 내용을 2~3줄로 요약하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Summarize key points in 2-3 lines" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "核心を2〜3行で要約しましょう" }
+        }
+      }
+    },
+    "Tesla·SpaceX CEO의 5분 단위 시간 관리법" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Tesla & SpaceX CEO's 5-minute time management" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "Tesla・SpaceX CEOの5分単位時間管理法" }
+        }
+      }
+    },
+    "하루를 30분 단위로 나누고, 가장 중요한 3가지를 먼저 정합니다. 나머지 생각은 Brain Dump에 쏟아낸 뒤 시간표에 배치합니다. 일론 머스크가 실제로 사용하는 플래너 방식입니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Divide your day into 30-minute blocks and set the 3 most important tasks first. Dump remaining thoughts in Brain Dump, then assign them to time slots. This is the actual planner method used by Elon Musk." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "1日を30分単位に分け、最も重要な3つを先に決めます。残りの考えはBrain Dumpに書き出し、時間割に配置します。イーロン・マスクが実際に使うプランナー方式です。" }
+        }
+      }
+    },
+    "오늘 반드시 해야 할 일" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Must-do tasks for today" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "今日必ずやるべきこと" }
+        }
+      }
+    },
+    "머릿속 모든 생각을 쏟아내세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Dump all your thoughts here" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "頭の中のすべての考えを書き出しましょう" }
+        }
+      }
+    },
+    "노벨 물리학상 수상자" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Nobel Prize-winning physicist" }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "ノーベル物理学賞受賞者" }
+        }
+      }
+    },
+    "어떤 개념이든 초등학생에게 설명할 수 있을 때까지 단순화합니다. 설명 못하는 부분이 바로 당신이 모르는 부분입니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Simplify any concept until you can explain it to a child. The parts you can't explain are the parts you don't truly understand." }
+        },
+        "ja" : {
+          "stringUnit" : { "state" : "translated", "value" : "どんな概念でも小学生に説明できるまで単純化します。説明できない部分こそ、あなたが理解していない部分です。" }
+        }
+      }
+    },
+    "1. 개념 선택" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "1. Choose a concept" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "1. 概念を選ぶ" } }
+      }
+    },
+    "배우고 싶은 개념을 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write down the concept you want to learn" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "学びたい概念を書きましょう" } }
+      }
+    },
+    "2. 쉽게 설명하기" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "2. Explain simply" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "2. 簡単に説明する" } }
+      }
+    },
+    "초등학생도 이해할 수 있게 설명하세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Explain it so a child could understand" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "小学生にもわかるように説明しましょう" } }
+      }
+    },
+    "3. 막히는 부분" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "3. Knowledge gaps" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "3. 詰まる部分" } }
+      }
+    },
+    "설명이 안 되는 부분 = 모르는 부분을 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Parts you can't explain = parts you don't know" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "説明できない部分＝知らない部分を書きましょう" } }
+      }
+    },
+    "4. 다시 단순화" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "4. Simplify again" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "4. もう一度単純化" } }
+      }
+    },
+    "돌아가서 다시 공부한 뒤, 더 쉽게 설명하세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Go back, study again, and explain more simply" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "戻って勉強し直し、もっと簡単に説明しましょう" } }
+      }
+    },
+    "실리콘밸리 생산성 바이블" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Silicon Valley's productivity bible" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "シリコンバレーの生産性バイブル" } }
+      }
+    },
+    "머릿속의 모든 할 일을 외부 시스템에 쏟아낸 뒤, '지금 할 수 있는 다음 행동'에만 집중합니다. 걱정 대신 실행이 남습니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dump all tasks from your mind into an external system, then focus only on the 'next action you can do right now.' Replace worry with action." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "頭の中のすべてのタスクを外部システムに書き出し、「今できる次の行動」だけに集中します。心配の代わりに実行が残ります。" } }
+      }
+    },
+    "머릿속 모든 것을 쏟아내세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dump everything from your mind" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "頭の中のすべてを書き出しましょう" } }
+      }
+    },
+    "각 항목이 실행 가능한가? 다음 행동은?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Is each item actionable? What's the next action?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "各項目は実行可能ですか？次の行動は？" } }
+      }
+    },
+    "프로젝트 / 대기 / 언젠가로 분류하세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Categorize into Project / Waiting / Someday" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "プロジェクト/待機/いつかに分類しましょう" } }
+      }
+    },
+    "지금 바로 할 수 있는 행동만 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write only actions you can do right now" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今すぐできる行動だけを書きましょう" } }
+      }
+    },
+    "스티브 잡스가 즐겨 쓴 우선순위 프레임" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Steve Jobs' favorite priority framework" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "スティーブ・ジョブズ愛用の優先順位フレーム" } }
+      }
+    },
+    "모든 일을 긴급/중요 2축으로 나눕니다. 정말 중요한 일에 시간을 쓰고, 긴급하기만 한 일은 위임하거나 제거합니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Divide all tasks by urgency and importance. Spend time on what truly matters, and delegate or eliminate what's only urgent." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "すべてのタスクを緊急/重要の2軸で分けます。本当に重要なことに時間を使い、緊急なだけのことは委任または排除します。" } }
+      }
+    },
+    "긴급 + 중요 (즉시 실행)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Urgent + Important (Do now)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "緊急＋重要（即実行）" } }
+      }
+    },
+    "지금 당장 해야 하는 일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tasks that need to be done right now" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今すぐやるべきこと" } }
+      }
+    },
+    "중요 + 비긴급 (계획)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Important + Not Urgent (Plan)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "重要＋非緊急（計画）" } }
+      }
+    },
+    "장기적으로 가치 있는 일 — 여기에 집중!" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Long-term valuable tasks — Focus here!" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "長期的に価値のあること — ここに集中！" } }
+      }
+    },
+    "긴급 + 비중요 (위임)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Urgent + Not Important (Delegate)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "緊急＋非重要（委任）" } }
+      }
+    },
+    "다른 사람에게 맡길 수 있는 일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tasks you can delegate to others" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "他の人に任せられること" } }
+      }
+    },
+    "비긴급 + 비중요 (제거)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Not Urgent + Not Important (Eliminate)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "非緊急＋非重要（排除）" } }
+      }
+    },
+    "과감히 하지 않을 일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tasks to boldly eliminate" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "思い切ってやらないこと" } }
+      }
+    },
+    "르네상스 노트 방식" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Renaissance note-taking style" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ルネサンスのノート方式" } }
+      }
+    },
+    "글과 그림을 자유롭게 섞어 기록합니다. 다빈치처럼 관찰하고, 스케치하고, 메모를 남기세요. 정형화된 틀이 없는 것이 곧 형식입니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Freely mix text and drawings. Observe, sketch, and take notes like Da Vinci. Having no rigid format is the format itself." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "文と絵を自由に混ぜて記録します。ダ・ヴィンチのように観察し、スケッチし、メモを残しましょう。型がないことが型です。" } }
+      }
+    },
+    "관찰 스케치" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Observation Sketch" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "観察スケッチ" } }
+      }
+    },
+    "보이는 것을 그리세요 — 완벽하지 않아도 됩니다" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Draw what you see — it doesn't have to be perfect" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "見えるものを描きましょう — 完璧でなくてOK" } }
+      }
+    },
+    "메모 & 질문" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notes & Questions" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "メモ＆質問" } }
+      }
+    },
+    "스케치 옆에 떠오르는 생각, 질문, 아이디어를 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write thoughts, questions, and ideas next to your sketches" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "スケッチの横に思いついた考え、質問、アイデアを書きましょう" } }
+      }
+    },
+    "연결 & 발견" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connections & Discoveries" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "つながり＆発見" } }
+      }
+    },
+    "관찰들 사이의 패턴이나 새로운 발견을 기록하세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Record patterns or new discoveries between observations" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "観察間のパターンや新しい発見を記録しましょう" } }
+      }
+    },
+    "Benjamin Franklin 덕목 일지" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Benjamin Franklin Virtue Journal" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ベンジャミン・フランクリン徳目日誌" } }
+      }
+    },
+    "자서전에 직접 기록한 자기계발법" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Self-improvement method from his autobiography" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "自伝に直接記録した自己啓発法" } }
+      }
+    },
+    "매주 하나의 덕목에 집중하고, 매일 밤 스스로를 돌아봅니다. 프랭클린이 평생 실천한 자기 개선의 원형입니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Focus on one virtue each week and reflect every night. This is the original self-improvement system Franklin practiced his entire life." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "毎週1つの徳目に集中し、毎晩自分を振り返ります。フランクリンが生涯実践した自己改善の原型です。" } }
+      }
+    },
+    "이번 주 덕목" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This week's virtue" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今週の徳目" } }
+      }
+    },
+    "이번 주 집중할 덕목 하나를 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write one virtue to focus on this week" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今週集中する徳目を1つ書きましょう" } }
+      }
+    },
+    "오늘의 실천 기록" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today's practice log" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日の実践記録" } }
+      }
+    },
+    "이 덕목을 위해 오늘 무엇을 했나요?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "What did you do today for this virtue?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この徳目のために今日何をしましたか？" } }
+      }
+    },
+    "반성 & 개선" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reflect & Improve" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "反省＆改善" } }
+      }
+    },
+    "잘한 점과 내일 개선할 점을 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write what went well and what to improve tomorrow" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "良かった点と明日改善する点を書きましょう" } }
+      }
+    },
+    "세계 최고 투자자의 목표 설정법" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "World's greatest investor's goal-setting method" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "世界最高の投資家の目標設定法" } }
+      }
+    },
+    "목표 25개를 적고, 상위 5개만 남깁니다. 나머지 20개는 '절대 하지 않을 것 목록'이 됩니다. 진짜 중요한 것에만 집중하는 극단적 우선순위 설정법." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write 25 goals, keep only the top 5. The remaining 20 become your 'never-do list.' An extreme prioritization method for focusing on what truly matters." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "目標を25個書き、上位5つだけ残します。残りの20個は「絶対にやらないリスト」になります。本当に重要なことだけに集中する究極の優先順位設定法。" } }
+      }
+    },
+    "목표 25개 나열" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "List 25 goals" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "目標25個を列挙" } }
+      }
+    },
+    "달성하고 싶은 목표를 25개 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write 25 goals you want to achieve" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "達成したい目標を25個書きましょう" } }
+      }
+    },
+    "TOP 5 선택" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Select TOP 5" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "TOP 5を選択" } }
+      }
+    },
+    "가장 중요한 5개를 고르세요 — 이것만 한다" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pick the 5 most important — do only these" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "最も重要な5つを選びましょう — これだけやる" } }
+      }
+    },
+    "절대 안 할 것 (나머지 20개)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Never-do list (remaining 20)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "絶対にやらないこと（残り20個）" } }
+      }
+    },
+    "TOP 5 이외는 모두 여기 — 끝날 때까지 손대지 않는다" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Everything outside TOP 5 goes here — don't touch until done" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "TOP 5以外はすべてここ — 終わるまで手を出さない" } }
+      }
+    },
+    "마이크로소프트 성장기 루틴" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Microsoft growth-era routine" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "マイクロソフト成長期のルーティン" } }
+      }
+    },
+    "일주일간 외부와 단절하고 오직 읽고, 생각하고, 기록합니다. 빌 게이츠의 가장 중요한 전략적 결정들이 Think Week에서 나왔습니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Disconnect for a week—only read, think, and write. Bill Gates' most important strategic decisions came from Think Week." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "1週間外部と遮断し、ただ読み、考え、記録します。ビル・ゲイツの最も重要な戦略的決定はThink Weekから生まれました。" } }
+      }
+    },
+    "읽을 자료 목록" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reading list" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "読む資料リスト" } }
+      }
+    },
+    "이번 주 읽을 논문, 책, 아티클을 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "List papers, books, and articles to read this week" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今週読む論文、本、記事を書きましょう" } }
+      }
+    },
+    "핵심 인사이트" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Key insights" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "核心インサイト" } }
+      }
+    },
+    "읽으면서 떠오른 핵심 생각들" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Key thoughts that emerged while reading" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "読みながら浮かんだ核心的な考え" } }
+      }
+    },
+    "전략적 결정/행동" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Strategic decisions / actions" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "戦略的決定/行動" } }
+      }
+    },
+    "인사이트에서 도출된 구체적 액션" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Concrete actions derived from insights" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "インサイトから導き出された具体的アクション" } }
+      }
+    },
+    "논문 70편 저술한 사회학자" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sociologist who authored 70 papers" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "論文70編を著述した社会学者" } }
+      }
+    },
+    "하나의 메모에 하나의 생각만 적고, 메모들을 서로 연결합니다. 생각의 네트워크가 쌓이면, 글과 아이디어가 자연스럽게 만들어집니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write one thought per note and connect notes to each other. As your network of thoughts grows, writing and ideas emerge naturally." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "1つのメモに1つの考えだけを書き、メモ同士をつなげます。思考のネットワークが積み重なると、文章やアイデアが自然に生まれます。" } }
+      }
+    },
+    "원자적 메모 (하나의 생각)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Atomic note (one thought)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "アトミックメモ（1つの考え）" } }
+      }
+    },
+    "하나의 명확한 생각을 한 문장으로 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write one clear thought in a single sentence" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "1つの明確な考えを一文で書きましょう" } }
+      }
+    },
+    "설명 & 근거" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Explanation & Evidence" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "説明＆根拠" } }
+      }
+    },
+    "왜 이렇게 생각하는지 자세히 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write in detail why you think this way" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "なぜそう思うか詳しく書きましょう" } }
+      }
+    },
+    "연결 메모" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Linked notes" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "つながりメモ" } }
+      }
+    },
+    "이 생각과 연결되는 다른 생각이나 메모 번호를 적으세요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write other thoughts or note IDs connected to this idea" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この考えとつながる他の考えやメモ番号を書きましょう" } }
+      }
+    },
+    "출처" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Source" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "出典" } }
+      }
+    },
+    "이 생각의 출처 (책, 강의, 대화 등)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Source of this thought (book, lecture, conversation, etc.)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この考えの出典（本、講義、会話など）" } }
+      }
+    },
+    "애플 제품 기획 방식에서 추출" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Extracted from Apple's product planning" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Apple製品の企画方式から抽出" } }
+      }
+    },
+    "기술·사용자·비즈니스 세 원이 겹치는 교차점에서 최고의 결정이 나옵니다. 잡스가 애플 제품을 기획하던 방식의 핵심입니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The best decisions come from the intersection of Technology, User, and Business. This is the core of how Jobs planned Apple products." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "技術・ユーザー・ビジネスの3つの円が重なる交差点で最高の決定が生まれます。ジョブズがApple製品を企画した方式の核心です。" } }
+      }
+    },
+    "기술 (Technology)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Technology" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "技術（Technology）" } }
+      }
+    },
+    "우리가 만들 수 있는 것은?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "What can we build?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "私たちが作れるものは？" } }
+      }
+    },
+    "사용자 (User)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "User" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ユーザー（User）" } }
+      }
+    },
+    "사용자가 진짜 원하는 것은?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "What do users truly want?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ユーザーが本当に求めるものは？" } }
+      }
+    },
+    "비즈니스 (Business)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Business" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ビジネス（Business）" } }
+      }
+    },
+    "지속 가능한 수익 모델은?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "What's a sustainable revenue model?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "持続可能な収益モデルは？" } }
+      }
+    },
+    "교차점 = 답" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Intersection = Answer" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "交差点＝答え" } }
+      }
+    },
+    "세 원이 겹치는 곳 — 이것이 우리가 해야 할 일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Where the three circles overlap — this is what we should do" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "3つの円が重なるところ — これが私たちがやるべきこと" } }
+      }
+    },
+    "전 세계 600만 명 사용" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Used by 6 million people worldwide" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "世界600万人が使用" } }
+      }
+    },
+    "빠른 기호(·, ○, -)로 할일, 이벤트, 메모를 구분합니다. 하루를 기록하고, 한 달을 돌아보고, 일 년을 설계합니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Use rapid symbols (·, ○, -) to distinguish tasks, events, and notes. Record your day, review your month, and design your year." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "記号（·、○、-）でタスク、イベント、メモを区別します。1日を記録し、1ヶ月を振り返り、1年を設計します。" } }
+      }
+    },
+    "· 할 일 (Tasks)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "· Tasks" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "· やること（Tasks）" } }
+      }
+    },
+    "· 오늘 해야 할 일들" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "· Today's tasks" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "· 今日やるべきこと" } }
+      }
+    },
+    "○ 이벤트 (Events)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "○ Events" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "○ イベント（Events）" } }
+      }
+    },
+    "○ 오늘의 일정과 약속" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "○ Today's schedule and appointments" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "○ 今日の予定と約束" } }
+      }
+    },
+    "- 메모 (Notes)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "- Notes" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "- メモ（Notes）" } }
+      }
+    },
+    "- 떠오른 생각, 아이디어, 관찰" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "- Thoughts, ideas, and observations" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "- 浮かんだ考え、アイデア、観察" } }
+      }
+    },
+    "돌아보기 (Reflection)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reflection" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "振り返り（Reflection）" } }
+      }
+    },
+    "오늘 하루는 어땠나요?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "How was your day?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日はどんな一日でしたか？" } }
+      }
+    },
+    "Second Brain 창시자" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Creator of Second Brain" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Second Brain創始者" } }
+      }
+    },
+    "모든 정보를 Projects, Areas, Resources, Archives 네 폴더로 정리합니다. 어떤 정보든 4초 안에 제자리를 찾습니다." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Organize all information into four folders: Projects, Areas, Resources, Archives. Any piece of information finds its place in 4 seconds." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "すべての情報をProjects、Areas、Resources、Archivesの4つのフォルダに整理します。どんな情報でも4秒で定位置に収まります。" } }
+      }
+    },
+    "Projects (진행 중 프로젝트)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Projects (Active)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Projects（進行中）" } }
+      }
+    },
+    "기한이 있는 현재 진행 중인 일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Active work with a deadline" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "期限のある現在進行中のこと" } }
+      }
+    },
+    "Areas (관리 영역)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Areas (Ongoing)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Areas（管理領域）" } }
+      }
+    },
+    "기한 없이 지속적으로 관리하는 영역 (건강, 재정 등)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ongoing areas without deadlines (health, finance, etc.)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "期限なく継続的に管理する領域（健康、財務など）" } }
+      }
+    },
+    "Resources (자료)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resources" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Resources（資料）" } }
+      }
+    },
+    "관심 분야의 참고 자료" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reference materials for your interests" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "関心分野の参考資料" } }
+      }
+    },
+    "Archives (보관)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Archives" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Archives（保管）" } }
+      }
+    },
+    "완료되었거나 더 이상 활성화되지 않은 항목" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Completed or no longer active items" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "完了したまたはもうアクティブでない項目" } }
+      }
+    },
+    "Capture (수집)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Capture" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Capture（収集）" } }
+      }
+    },
+    "Clarify (명확화)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Clarify" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Clarify（明確化）" } }
+      }
+    },
+    "Organize (정리)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Organize" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Organize（整理）" } }
+      }
+    },
+    "Next Actions (다음 행동)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next Actions" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Next Actions（次の行動）" } }
+      }
+    },
+    "Cue (키워드/질문)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cue (Keywords / Questions)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Cue（キーワード/質問）" } }
+      }
+    },
+    "Notes (노트)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notes" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Notes（ノート）" } }
+      }
+    },
+    "Summary (요약)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Summary" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Summary（要約）" } }
+      }
+    },
+    "긴급" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Urgent" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "緊急" } }
+      }
+    },
+    "비긴급" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Not Urgent" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "非緊急" } }
+      }
+    },
+    "중요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Important" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "重要" } }
+      }
+    },
+    "비중요" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Not Important" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "非重要" } }
+      }
+    },
+    "반복" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Repeat" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "繰り返し" } }
+      }
+    },
+    "실천 기록" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Practice log" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "実践記録" } }
+      }
+    },
+    "월" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mon" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "月" } }
+      }
+    },
+    "화" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tue" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "火" } }
+      }
+    },
+    "수" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wed" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "水" } }
+      }
+    },
+    "목" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Thu" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "木" } }
+      }
+    },
+    "금" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Fri" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "金" } }
+      }
+    },
+    "토" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sat" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "土" } }
+      }
+    },
+    "일" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sun" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "日" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

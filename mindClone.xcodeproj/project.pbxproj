@@ -86,10 +86,12 @@
 				};
 			};
 			buildConfigurationList = ED2B3D052F63CF55007BAB62 /* Build configuration list for PBXProject "mindClone" */;
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ko,
+				ja,
 				Base,
 			);
 			mainGroup = ED2B3D012F63CF55007BAB62;
