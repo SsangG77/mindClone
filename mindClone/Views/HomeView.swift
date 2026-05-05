@@ -1,13 +1,5 @@
 import SwiftUI
 
-// MARK: - 오늘의 추천 카드 위치 전달용 PreferenceKey
-struct TodayCardFrameKey: PreferenceKey {
-    static var defaultValue: CGRect = .zero
-    static func reduce(value: inout CGRect, nextValue: () -> CGRect) {
-        value = nextValue()
-    }
-}
-
 struct HomeView: View {
     @State var noteStore: NoteStore
     @State private var selectedCategory: TemplateCategory?
@@ -100,15 +92,6 @@ struct HomeView: View {
                 .sketchyCard(wobble: 2.5)
             }
             .buttonStyle(.plain)
-            .background(
-                GeometryReader { geo in
-                    Color.clear
-                        .preference(
-                            key: TodayCardFrameKey.self,
-                            value: geo.frame(in: .global)
-                        )
-                }
-            )
         }
     }
 

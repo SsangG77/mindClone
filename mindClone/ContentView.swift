@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @Environment(NoteStore.self) private var noteStore
 
     var body: some View {
@@ -17,11 +16,6 @@ struct ContentView: View {
             }
         }
         .tint(MCColor.inkFallback)
-        .overlay {
-            if !hasCompletedOnboarding {
-                CoachMarkOverlayView(hasCompleted: $hasCompletedOnboarding)
-            }
-        }
     }
 }
 

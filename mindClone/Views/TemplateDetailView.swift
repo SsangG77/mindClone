@@ -18,15 +18,14 @@ struct TemplateDetailView: View {
         ZStack {
             PaperPatternBackground()
 
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    header
-                    benefitSection
-                    sectionsPreview
-                    startButton
-                }
-                .padding()
+            VStack(alignment: .leading, spacing: 20) {
+                header
+                benefitSection
+                sectionsPreview
+                Spacer()
+                startButton
             }
+            .padding()
         }
         .navigationTitle(template.name)
         .navigationBarTitleDisplayMode(.inline)

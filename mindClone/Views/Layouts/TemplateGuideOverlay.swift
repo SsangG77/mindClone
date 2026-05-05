@@ -77,7 +77,7 @@ struct TemplateGuideOverlay: View {
     // MARK: - Musk Time Block
     private var muskTimeBlockGuide: some View {
         let divX = size.width * 0.4
-        let labels = ["5","6","7","8","9","10","11","12","1","2","3","4","5","6","7","8","9","10","11"]
+        let labels = ["8","9","10","11","12","1","2","3","4","5"]
         let rightW = size.width - divX
         let timeColMid = divX + 30 + (rightW - 30) / 2
         let rowH = (size.height - 30) / CGFloat(labels.count)
@@ -94,7 +94,7 @@ struct TemplateGuideOverlay: View {
 
             // Priority 줄 3개
             ForEach(0..<3) { i in
-                let y = CGFloat(40 + i * 36)
+                let y = CGFloat(40 + i * 72)
                 Path { p in
                     p.move(to: CGPoint(x: 16, y: y))
                     p.addLine(to: CGPoint(x: divX - 16, y: y))
@@ -102,7 +102,7 @@ struct TemplateGuideOverlay: View {
             }
 
             Text("Brain Dump").font(labelFont).foregroundStyle(labelColor)
-                .position(x: divX / 2, y: 160)
+                .position(x: divX / 2, y: 268)
 
             // 오른쪽: :00 :30 헤더
             Text(":00").font(labelFont).foregroundStyle(labelColor)
